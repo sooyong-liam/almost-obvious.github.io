@@ -25,4 +25,9 @@ body {
   padding: 2rem;
   padding-right: 3rem;
   max-width: 800px
-
+}
+mjx-container[display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
