@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>{{TITLE}}</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 
+  <!-- MathJax setup -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script>
     window.MathJax = {
@@ -21,24 +22,30 @@
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
 </head>
+
 <body>
-  <div class="sidebar">
-    <h2>Topics</h2>
-    <a href="index.html">🏠 Home</a>
-    <a href="bayes.html">📌 Bayes' Theorem</a>
-    <!-- Add more links here -->
-  </div>
-
-  <div class="main-content">
-    <!-- Replace everything below with your content -->
-
+  <header>
     <h1>{{PAGE_HEADING}}</h1>
-    <p>Write your math content here!</p>
+    <p class="subtitle">This site builds intuition until the theorem surrenders.</p>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="bayes.html">📌 Bayes' Theorem</a>
+      <!-- Add more links here -->
+    </nav>
+  </header>
+
+  <main>
+    <!-- Your math page content starts here -->
+    <h2>Introduction</h2>
+    <p>This is your new page — include examples, proofs, or rants here.</p>
     <p>
       $$ \int_0^1 x^2 \, dx = \frac{1}{3} $$
     </p>
+    <!-- Your math page content ends here -->
+  </main>
 
-    <!-- End of your page content -->
-  </div>
+  <footer>
+    <p>Site powered by MathJax, caffeine, and stubborn curiosity.</p>
+  </footer>
 </body>
 </html>
