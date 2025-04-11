@@ -9,16 +9,18 @@
   </script>
 </head>
 <body>
-  <div class="sidebar">
-    <h2>Topics</h2>
-    <a href="index.html">🏠 Home</a>
-    <a href="bayes.html">📌 Bayes' Theorem</a>
-  </div>
-
-  <div class="main-content">
+  <header>
     <h1>Bayes' Theorem</h1>
-    <p>Let’s build this one from curiosity.</p>
-    <p>We want to know \( P(A \mid B) \), but we might know \( P(B \mid A) \). That’s where Bayes steps in:</p>
+    <p class="subtitle">Flipping the conditional like a logical pancake.</p>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <a href="bayes.html">📌 Bayes' Theorem</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>The Setup</h2>
+    <p>We want to compute \( P(A \mid B) \), but we only know \( P(B \mid A) \). That’s where Bayes jumps in and says:</p>
 
     <p>
       $$
@@ -26,8 +28,8 @@
       $$
     </p>
 
-    <p>It’s not black magic — it’s just the definition of conditional probability rearranged. More on that soon.</p>
-  </div>
-  <p><a href="index.html">← Back to home</a></p> 
-</body>
+    <h2>Worked Example</h2>
+
+    <p>Suppose 1% of people have a rare disease. A test for the disease is 99% accurate: it returns a positive result 99% of the time when
+
 </html>
