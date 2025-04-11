@@ -8,16 +8,11 @@ body {
   min-height: 100vh;
 }
 
-.sidebar {
-  width: 220px;
-  background-color: #f0f0f8;
-  padding: 1rem;
-  border-right: 1px solid #ddd;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  overflow-y: auto;
+.sidebar a {
+  display: block;
+  color: #1e90ff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 .main-content {
