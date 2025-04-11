@@ -8,7 +8,6 @@ body {
   min-height: 100vh;
 }
 
-/* Sidebar styles */
 .sidebar {
   width: 220px;
   background-color: #f0f0f8;
@@ -21,16 +20,9 @@ body {
   overflow-y: auto;
 }
 
-.sidebar h2 {
-  margin-top: 0;
-  color: #4b0082;
+.main-content {
+  margin-left: 240px;
+  padding: 2rem;
+  max-width: 800px;
+  line-height: 1.6;
 }
-
-.sidebar a {
-  display: block;
-  color: #1e90ff;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-}
-
-.sidebar a
