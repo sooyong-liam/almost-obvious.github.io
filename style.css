@@ -98,6 +98,7 @@ summary:hover {
 /* Main content styling */
 .content {
   flex-grow: 1;
+  
   padding: 2rem;
   max-width: 900px;
 }
