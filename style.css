@@ -21,8 +21,8 @@ body {
 }
 
 .main-content {
-  margin-left: 240px;
+  margin-left: 240px; /* matches sidebar width + spacing */
   padding: 2rem;
-  max-width: 800px;
-  line-height: 1.6;
-}
+  padding-right: 3rem;
+  max-width: 800px
+
