@@ -44,3 +44,21 @@ mjx-container[display="true"] {
   text-align: center;
   margin: 1em 0;
 }
+details {
+  margin-bottom: 1rem;
+  background: #f9f9ff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #4b0082;
+}
+
+summary:hover {
+  text-decoration: underline;
+}
+
