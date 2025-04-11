@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{TITLE}}</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Topics</h2>
+    <a href="index.html">🏠 Home</a>
+    <a href="bayes.html">📌 Bayes' Theorem</a>
+    <!-- Add more links here -->
+  </div>
+
+  <div class="main-content">
+    <!-- Replace everything below with your content -->
+
+    <h1>{{PAGE_HEADING}}</h1>
+    <p>Write your math content here!</p>
+    <p>
+      $$ \int_0^1 x^2 \, dx = \frac{1}{3} $$
+    </p>
+
+    <!-- End of your page content -->
+  </div>
+</body>
+</html>
