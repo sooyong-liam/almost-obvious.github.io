@@ -1,36 +1,36 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Georgia', serif;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
   background-color: #fefefe;
   color: #222;
+  display: flex;
+  min-height: 100vh;
 }
 
-h1, h2 {
+/* Sidebar styles */
+.sidebar {
+  width: 220px;
+  background-color: #f0f0f8;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.sidebar h2 {
+  margin-top: 0;
   color: #4b0082;
 }
 
-a {
+.sidebar a {
+  display: block;
   color: #1e90ff;
   text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-code {
-  background: #f4f4f4;
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
-}
-
-p {
-  margin-bottom: 1.25rem;
-}
-
-ul {
-  padding-left: 1.2rem;
-}
+.sidebar a
