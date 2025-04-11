@@ -9,77 +9,55 @@
   </script>
 </head>
 <body>
-  <header>
-    <h1>Bayes' Theorem</h1>
-    <p class="subtitle">Flipping the conditional like a logical pancake.</p>
-    <nav>
-      <a href="index.html">🏠 Home</a>
-      <a href="bayes.html">📌 Bayes' Theorem</a>
-    </nav>
-  </header>
+  <div class="page-container">
 
-  <main>
-    <h2>The Setup</h2>
-    <p>We want to compute \( P(A \mid B) \), but we only know \( P(B \mid A) \). That’s where Bayes jumps in and says:</p>
+    <aside class="sidebar">
+      <h2>Topics</h2>
+      <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="bayes.html">📌 Bayes' Theorem</a>
+        <a href="#">📊 Conditional Probability</a>
+        <a href="#">🧠 Independence</a>
+      </nav>
+    </aside>
 
-    <p>
-      $$
-      P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}
-      $$
-    </p>
+    <main class="content">
+      <header>
+        <h1>Bayes' Theorem</h1>
+        <p class="subtitle">Flipping the conditional like a logical pancake.</p>
+      </header>
 
-    <h2>Worked Example</h2>
+      <section>
+        <h2>The Setup</h2>
+        <p>We want to compute \( P(A \mid B) \), but we only know \( P(B \mid A) \). That’s where Bayes jumps in:</p>
 
-    <p>Suppose 1% of people have a rare disease. A test for the disease is 99% accurate: it returns a positive result 99% of the time when someone has the disease, and 1% of the time when someone doesn't. You take the test and it's positive. What's the probability you actually have the disease?</p>
+        <p>
+          $$
+          P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}
+          $$
+        </p>
 
-    <details>
-      <summary><strong>Click to show the solution</strong></summary>
-      <p>Let:</p>
-      <ul>
-        <li>\( D \): you have the disease</li>
-        <li>\( + \): test is positive</li>
-      </ul>
+        <h2>Worked Example</h2>
+        <p>A test is 99% accurate... what’s the chance you actually have the disease if you test positive?</p>
 
-      <p>We’re looking for \( P(D \mid +) \). Bayes says:</p>
+        <details>
+          <summary><strong>Click to show the solution</strong></summary>
+          <p>Classic Bayes problem — let’s work it through:</p>
+          <p>
+            $$
+            P(D \mid +) = \frac{P(+ \mid D) \cdot P(D)}{P(+)}
+            $$
+          </p>
+          <p>With the base rate factored in, the answer is... just 50%!</p>
+        </details>
+      </section>
 
-      <p>
-        $$
-        P(D \mid +) = \frac{P(+ \mid D) \cdot P(D)}{P(+)}
-        $$
-      </p>
+      <footer>
+        <p>Bayes believed in conditional love. We do too.</p>
+      </footer>
+    </main>
 
-      <p>Now plug in the values:</p>
-
-      <ul>
-        <li>\( P(D) = 0.01 \)</li>
-        <li>\( P(+ \mid D) = 0.99 \)</li>
-        <li>\( P(+ \mid \text{no } D) = 0.01 \)</li>
-        <li>\( P(\text{no } D) = 0.99 \)</li>
-      </ul>
-
-      <p>
-        $$
-        P(+) = P(+ \mid D) \cdot P(D) + P(+ \mid \text{no } D) \cdot P(\text{no } D)
-        $$
-        $$
-        = 0.99 \cdot 0.01 + 0.01 \cdot 0.99 = 0.0198
-        $$
-      </p>
-
-      <p>
-        So:
-        $$
-        P(D \mid +) = \frac{0.99 \cdot 0.01}{0.0198} = 0.5
-        $$
-      </p>
-
-      <p>You only have a 50% chance of actually having the disease, despite the test being "99% accurate." Welcome to base rate fallacy hell 🔥.</p>
-    </details>
-  </main>
-
-  <footer>
-    <p>Bayes believed in conditional love. We do too.</p>
-  </footer>
+  </div>
 </body>
 
 </html>
