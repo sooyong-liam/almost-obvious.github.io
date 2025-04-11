@@ -8,19 +8,21 @@ body {
   min-height: 100vh;
 }
 .sidebar {
-  width: 220px;
+  min-width: 180px;
+  max-width: 240px;
+  width: auto;
   background-color: #f0f0f8;
-  padding-top: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1.5rem;
+  padding: 1rem 1rem 1rem 1.5rem;
   border-right: 1px solid #ddd;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   overflow-y: auto;
+  box-sizing: border-box;
+  white-space: nowrap;
 }
+
 .sidebar a {
   display: block;
   color: #1e90ff;
@@ -29,11 +31,14 @@ body {
 }
 
 .main-content {
-  margin-left: 240px; /* matches sidebar width + spacing */
+  margin-left: 260px;  /* Give it space to breathe from sidebar */
   padding: 2rem;
   padding-right: 3rem;
-  max-width: 800px
+  max-width: 800px;
+  line-height: 1.6;
+  box-sizing: border-box;
 }
+
 mjx-container[display="true"] {
   display: block;
   text-align: center;
