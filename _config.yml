@@ -1,4 +1,6 @@
+theme: jekyll-theme-cayman
 title: Almost Obvious
+description: "A site filled with deep dives into the world of math."
 markdown: kramdown
 kramdown:
   math_engine: mathjax
