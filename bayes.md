@@ -14,27 +14,14 @@ $$
    content="
 Let’s assume 1% have a disease, test is 99% accurate...
 
-This means:
-
 - $P(A) = 0.01$
 - $P(B \mid A) = 0.99$
-- $P(B \mid \neg A) = 0.01$
+- $P(B \mid \\neg A) = 0.01$
 
 Then Bayes’ Theorem tells us:
 
 $$
-P(A \mid B) = \frac{0.99 \cdot 0.01}{0.99 \cdot 0.01 + 0.01 \cdot 0.99}
+P(A \\mid B) = \\frac{0.99 \\cdot 0.01}{0.99 \\cdot 0.01 + 0.01 \\cdot 0.99}
 $$
-" 
+"
 %}
-
-
-<details>
-<summary>Click to expand</summary>
-
-**Hello!** This is the hidden part. 
-
-- Try toggling me
-- No Liquid includes here
-
-</details>
