@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8"/>
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/style.css">
-  <!-- MathJax setup -->
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  {% include mathjax.html %}  
-
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
 <body>
-  <div class="page-container">
-    {% include sidebar.html %}
-    <main class="content">
-      {{ content }}
-    </main>
-  </div>
+  {{ content }}
 </body>
 </html>
