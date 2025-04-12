@@ -3,11 +3,6 @@ layout: default
 title: Bayes' Theorem
 ---
 
----
-layout: default
-title: Bayes' Theorem
----
-
 # Bayes' Theorem
 
 $$
