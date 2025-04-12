@@ -1,4 +1,5 @@
 theme: jekyll-theme-cayman
+baseurl: "/almost-obvious.github.io"  # Note the leading slash, no trailing slash
 title: Almost Obvious
 description: "A site filled with deep dives into the world of math."
 markdown: kramdown
