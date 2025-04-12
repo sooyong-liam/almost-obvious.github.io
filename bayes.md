@@ -9,9 +9,12 @@ $$
 P(A \mid B) = \frac{P(B \mid A) \cdot P(A)}{P(B)}
 $$
 
-<details>
-<summary>Click to show the worked example</summary>
+<div>
+  <details>
+    <summary>Click to show the worked example</summary>
 
-Let’s assume 1% have a disease, test is 99% accurate...
+    <p>Let’s assume 1% have a disease, test is 99% accurate...</p>
 
-</details>
+  </details>
+</div>
+
