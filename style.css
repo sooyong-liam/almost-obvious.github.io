@@ -1,112 +1,33 @@
-:root {
-  --background: #fefefe;
-  --foreground: #1e1e1e;
-  --accent: #4b0082;
-  --accent-light: #a485c4;
-  --link-color: #1e90ff;
-  --sidebar-bg: #f5f1fa;
-  --font-body: 'Georgia', serif;
-  --font-heading: 'Segoe UI', sans-serif;
-}
-
+/* Minimal Reset and Base Styles */
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-body);
-  display: flex;
-  min-height: 100vh;
+  font-family: sans-serif;
+  background: #fff;
+  color: #000;
 }
 
-/* Layout wrapper */
+/* Basic Container Styles */
 .page-container {
-  display: flex;
-  min-height: 100vh;
+  padding: 1em;
 }
 
-/* Sidebar */
-.sidebar {
-  background-color: var(--sidebar-bg);
-  padding: 2rem 1.5rem;
-  min-width: 220px;
-  max-width: 260px;
-  border-right: 1px solid #ddd;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  overflow-y: auto;
-  box-sizing: border-box;
-}
-
-.sidebar h2 {
-  font-family: var(--font-heading);
-  font-size: 1.2rem;
-  color: var(--accent);
-  margin-bottom: 1rem;
-}
-
-.sidebar nav a {
-  display: block;
-  color: var(--link-color);
-  text-decoration: none;
-  margin-bottom: 0.75rem;
-  font-weight: 500;
-}
-
-.sidebar nav a:hover {
-  text-decoration: underline;
-}
-
-/* Main content */
+/* Main content styling */
 .content {
-  margin-left: 270px;
-  padding: 3rem;
-  max-width: 900px;
-  box-sizing: border-box;
-  line-height: 1.7;
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
 }
 
-.content h1, .content h2, .content h3 {
-  font-family: var(--font-heading);
-  color: var(--accent);
-  margin-top: 2rem;
-}
-
-.content .subtitle {
-  font-style: italic;
-  color: #777;
-  margin-top: -1rem;
-  margin-bottom: 2rem;
-}
-
-a {
-  color: var(--link-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Collapsibles */
+/* Barebones styling for collapsibles */
 details {
-  background: #f9f9ff;
-  padding: 1rem;
-  border-left: 4px solid var(--accent);
-  border-radius: 5px;
-  margin-bottom: 1.5rem;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1em;
 }
 
-summary {
+details > summary {
   cursor: pointer;
-  font-weight: bold;
-  color: var(--accent);
-}
-
-mjx-container[display="true"] {
-  display: block;
-  text-align: center;
-  margin: 1.5em 0;
+  display: list-item;  /* Restores browser default marker behavior */
 }
