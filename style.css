@@ -97,8 +97,10 @@ summary:hover {
 
 /* Main content styling */
 .content {
-  flex-grow: 1;
-  
+  margin-left: 260px; /* This should match or slightly exceed sidebar width */
   padding: 2rem;
   max-width: 900px;
+  line-height: 1.6;
+  box-sizing: border-box;
 }
+
