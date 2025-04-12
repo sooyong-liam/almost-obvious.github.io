@@ -1,4 +1,6 @@
 <details>
   <summary>{{ include.title }}</summary>
-  {{ include.content | markdownify }}
+  <div class="collapsible-body">
+    {{ include.content | markdownify }}
+  </div>
 </details>
