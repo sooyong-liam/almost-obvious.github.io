@@ -27,3 +27,14 @@ P(A \mid B) = \frac{0.99 \cdot 0.01}{0.99 \cdot 0.01 + 0.01 \cdot 0.99}
 $$
 " 
 %}
+
+
+<details>
+<summary>Click to expand</summary>
+
+**Hello!** This is the hidden part. 
+
+- Try toggling me
+- No Liquid includes here
+
+</details>
